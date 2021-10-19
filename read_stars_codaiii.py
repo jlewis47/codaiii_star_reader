@@ -10,7 +10,7 @@ def read_star_file(path):
     x,y,z are in box length units (>0, <1)                                                                    
     metallicities are in solar units                                                                          
     """
-    dt=np.dtype([('buf1','i4'),('id','i4'),('mass','f8'),('x','f8'),('y','f8'),('age','f8'),('z','f8'),('Z/0.\
+    dt=np.dtype([('buf1','i4'),('id','i4'),('mass','f8'),('x','f8'),('y','f8'),('z','f8'),('age','f8'),('Z/0.\
 02','f8'),('ll','i4'),('tag','i1'),('buf2','i4')])
 
     with open(path, 'rb') as src:
