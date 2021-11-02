@@ -11,7 +11,7 @@ def read_star_file(path):
     metallicities are in solar units                                                                          
     """
     dt=np.dtype([('buf1','i4'),('id','i4'),('mass','f8'),('x','f8'),('y','f8'),('z','f8'),('age','f8'),('Z/0.\
-02','f8'),('ll','i4'),('tag','i1'),('buf2','i4')])
+02','f8'),('ll','i4'),('tag','i1'),('family','i1'),('buf2','i4')])
 
     with open(path, 'rb') as src:
         data=np.fromfile(src,dt)
@@ -29,5 +29,5 @@ def read_all_star_files(tgt_path):
             datas=np.concatenate([datas,read_star_file(target)])
 
 
-    return(datas[['id','mass','x','y','z','age','Z/0.02']])
+    return(datas[['id','mass','x','y','z','age','Z/0.02','family']])
 
