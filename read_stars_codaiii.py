@@ -68,7 +68,7 @@ def read_all_star_files(tgt_path):
         size += l
 
     
-    return(datas)
+    return(time_myr, datas)
 
 def read_rank_star_files(tgt_path, rank, Nproc):
 
@@ -105,5 +105,5 @@ def read_rank_star_files(tgt_path, rank, Nproc):
         size += l
 
     
-    return(datas)
+    return(time_myr, datas)
 
