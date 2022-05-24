@@ -7,13 +7,13 @@ in a given directory (beware if you have other files in the directoy that contai
 quick usage example: 
 
 
->datas=read_all_star_files('/gpfs/alpine/proj-shared/ast031/jlewis/CoDaIII/prod_sr/getstarlist_runs/output_000034')   
+>age_myr, datas = read_all_star_files('/gpfs/alpine/proj-shared/ast031/jlewis/CoDaIII/prod_sr/getstarlist_runs/output_000034')   
 
 >datas['mass']
 
 
 
-available keys are: 'id','mass','x','y','z','age','Z/0.02'\
+available keys are: 'id','mass','x','y','z','age','Z/0.02','family'\
 mass is in solar units\
 age is in Myr\
 Z/0.02 is (a bit explicitly) in solar metallicities\
