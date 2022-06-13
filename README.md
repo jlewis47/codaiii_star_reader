@@ -7,7 +7,7 @@ in a given directory (beware if you have other files in the directoy that contai
 quick usage example: 
 
 
->age_myr, datas, star_ids = read_all_star_files('/gpfs/alpine/proj-shared/ast031/jlewis/CoDaIII/prod_sr/getstarlist_runs/output_000034')   
+>age_myr, datas = read_all_star_files('/gpfs/alpine/proj-shared/ast031/jlewis/CoDaIII/prod_sr/getstarlist_runs/output_000034')   
 
 >datas['mass']
 
@@ -18,5 +18,3 @@ mass is in solar units\
 age is in Myr\
 Z/0.02 is (a bit explicitly) in solar metallicities\
 x,y,z are in box units (so 0<=x,y,z<=1 -- you can get the cell coordinates by multiplying by 8196, which is the number of cells per box side)\
-star ids are internal id used for tagging to fof halos
-each id is a long int that containts the star file number and line where the particle can be found... dumb but it works
